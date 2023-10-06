@@ -2,32 +2,74 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Redirecting...</title>
+	<title>Redirecting, BUDDY...</title>
 	<script type="text/javascript">
 		/*
-		This file randomly redirects a user to one of the URLs in a list. It is built
-		with the intent of randomization in a controlled experiment.
-
-		For example, create three Google Docs forms (or equivalent) and add their URLs
-		to the list below. That's it!
-
-		The user is then automatically and randomly assigned to one of the URLs when
-		the user visits this file. If the user decides to close and reopen the browser,
-		the user is still redirected to the same URL since a cookie is saved in the
-		user's browser.
-		
-		Peter M. Dahlgren
-		@peterdalle
-		peterdahlgren.com
-		2016-01-05
+		yeah
 		*/
 		
 		// List of URLs (two or more) for the experimental treatment and control groups.
 		var RedirectURLs = {
 			"urls" : [
-				{ "url" : "http://www.aftonbladet.se/" },
-				{ "url" : "http://www.dn.se/" },
-				{ "url" : "http://www.svd.se/" }
+				{ "url" : "https://sites.google.com/ellsworth.k12.wi.us/98windowed/games/multiplayer/smashkarts-io" },
+				{ "url" : "https://sites.google.com/ellsworth.k12.wi.us/98windowed/games/multiplayer/blk-game" },
+				{ "url" : "https://sites.google.com/ellsworth.k12.wi.us/98windowed/games/multiplayer/tap-tap-adventure" }
+				{ "url" : "https://sites.google.com/ellsworth.k12.wi.us/98windowed/games/multiplayer/square-off" },
+				{ "url" : "https://sites.google.com/ellsworth.k12.wi.us/98windowed/games/multiplayer/jumpsuit" },
+				{ "url" : "https://sites.google.com/ellsworth.k12.wi.us/98windowed/games/multiplayer/spy-a-ghost" }
+				{ "url" : "https://sites.google.com/ellsworth.k12.wi.us/98windowed/games/multiplayer/bananabread" },
+				{ "url" : "https://sites.google.com/ellsworth.k12.wi.us/98windowed/games/multiplayer/madalin-stunt-cars" },
+				{ "url" : "https://sites.google.com/ellsworth.k12.wi.us/98windowed/games/multiplayer/stick-duel-battle" }
+				{ "url" : "https://sites.google.com/ellsworth.k12.wi.us/98windowed/games/racing/hexgl" },
+				{ "url" : "https://sites.google.com/ellsworth.k12.wi.us/98windowed/games/multiplayer/basketball-legends-2020" },
+				{ "url" : "https://sites.google.com/ellsworth.k12.wi.us/98windowed/games/multiplayer/basketball-stars" }
+				{ "url" : "https://sites.google.com/ellsworth.k12.wi.us/98windowed/games/sandbox/3d-city" },
+				{ "url" : "https://sites.google.com/ellsworth.k12.wi.us/98windowed/games/sandbox/cube-engine" },
+				{ "url" : "https://sites.google.com/ellsworth.k12.wi.us/98windowed/games/sandbox/bitlife" }
+				{ "url" : "https://sites.google.com/ellsworth.k12.wi.us/98windowed/games/sandbox/happy-wheels" },
+				{ "url" : "https://sites.google.com/ellsworth.k12.wi.us/98windowed/games/3d/super-mario-64" },
+				{ "url" : "https://sites.google.com/ellsworth.k12.wi.us/98windowed/games/3d/wolfenstein-3d" }
+				{ "url" : "https://sites.google.com/ellsworth.k12.wi.us/98windowed/games/3d/minecrafter" },
+				{ "url" : "https://sites.google.com/ellsworth.k12.wi.us/98windowed/games/3d/stunt-car-remake" },
+				{ "url" : "https://sites.google.com/ellsworth.k12.wi.us/98windowed/games/3d/subway-surfers" }
+				{ "url" : "https://sites.google.com/ellsworth.k12.wi.us/98windowed/games/arcade/fnaf-1" },
+				{ "url" : "https://sites.google.com/ellsworth.k12.wi.us/98windowed/games/arcade/fnaf-2-hacks" },
+				{ "url" : "https://sites.google.com/ellsworth.k12.wi.us/98windowed/games/arcade/fnaf-3" }
+				{ "url" : "https://sites.google.com/ellsworth.k12.wi.us/98windowed/games/rpg/ancient-beast" },
+				{ "url" : "https://sites.google.com/ellsworth.k12.wi.us/98windowed/games/rpg/hexa-battle" },
+				{ "url" : "https://sites.google.com/ellsworth.k12.wi.us/98windowed/games/board-games/connect-4" }
+				{ "url" : "https://sites.google.com/ellsworth.k12.wi.us/98windowed/games/other-games/physics-simulator" },
+				{ "url" : "https://sites.google.com/ellsworth.k12.wi.us/98windowed/games/other-games/html-playground" },
+				{ "url" : "https://sites.google.com/ellsworth.k12.wi.us/98windowed/games/system-simulators/macintosh-1984" }
+				{ "url" : "https://sites.google.com/ellsworth.k12.wi.us/98windowed/games/system-simulators/macintosh-system-7" },
+				{ "url" : "https://sites.google.com/ellsworth.k12.wi.us/98windowed/games/system-simulators/windows-98" },
+				{ "url" : "https://sites.google.com/ellsworth.k12.wi.us/98windowed/games/system-simulators/game-boy-advanced-emulator" }
+				{ "url" : "https://sites.google.com/ellsworth.k12.wi.us/98windowed/games/arcade/super-mario-bros" },
+				{ "url" : "https://sites.google.com/ellsworth.k12.wi.us/98windowed/games/arcade/pokemon-battles" },
+				{ "url" : "https://sites.google.com/ellsworth.k12.wi.us/98windowed/games/arcade/duck-hunt" }
+				{ "url" : "https://sites.google.com/ellsworth.k12.wi.us/98windowed/games/arcade/custom-tetris" },
+				{ "url" : "https://sites.google.com/ellsworth.k12.wi.us/98windowed/games/arcade/snake" },
+				{ "url" : "https://sites.google.com/ellsworth.k12.wi.us/98windowed/games/arcade/alien-invasion" }
+				{ "url" : "https://sites.google.com/ellsworth.k12.wi.us/98windowed/games/arcade/algaes-escape" },
+				{ "url" : "https://sites.google.com/ellsworth.k12.wi.us/98windowed/games/arcade/arashi" },
+				{ "url" : "https://sites.google.com/ellsworth.k12.wi.us/98windowed/games/arcade/avabranch" }
+				{ "url" : "https://sites.google.com/ellsworth.k12.wi.us/98windowed/games/arcade/ball-and-wall" },
+				{ "url" : "https://sites.google.com/ellsworth.k12.wi.us/98windowed/games/arcade/captain-rogers" },
+				{ "url" : "https://sites.google.com/ellsworth.k12.wi.us/98windowed/games/arcade/body-guard" }
+				{ "url" : "https://sites.google.com/ellsworth.k12.wi.us/98windowed/games/arcade/drill-bunny" },
+				{ "url" : "https://sites.google.com/ellsworth.k12.wi.us/98windowed/games/arcade/hurry" },
+				{ "url" : "https://sites.google.com/ellsworth.k12.wi.us/98windowed/games/arcade/hyperspace-garbage-collection" }
+				{ "url" : "https://sites.google.com/ellsworth.k12.wi.us/98windowed/games/arcade/poly-branch" },
+				{ "url" : "https://sites.google.com/ellsworth.k12.wi.us/98windowed/games/arcade/save-the-forest" },
+				{ "url" : "https://sites.google.com/ellsworth.k12.wi.us/98windowed/games/arcade/spashal" }
+				{ "url" : "https://sites.google.com/ellsworth.k12.wi.us/98windowed/games/arcade/survivor" },
+				{ "url" : "https://sites.google.com/ellsworth.k12.wi.us/98windowed/games/arcade/friday-night-funkin_1" },
+				{ "url" : "https://sites.google.com/ellsworth.k12.wi.us/98windowed/games/arcade/friday-night-funkin" }
+				{ "url" : "https://sites.google.com/ellsworth.k12.wi.us/98windowed/games/arcade/rooftop-sniper" },
+				{ "url" : "https://sites.google.com/ellsworth.k12.wi.us/98windowed/games/arcade/rooftop-sniper-2" },
+				{ "url" : "https://sites.google.com/ellsworth.k12.wi.us/98windowed/games/arcade/hill-clime-racers-2" }
+				{ "url" : "https://sites.google.com/ellsworth.k12.wi.us/98windowed/games/arcade/grindcraft" },
+				{ "url" : "https://sites.google.com/ellsworth.k12.wi.us/98windowed/games/arcade/unicycle-hero" },
 			]
 		}
 
